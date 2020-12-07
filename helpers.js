@@ -15,3 +15,13 @@ export function randomArray(len, n) {
 function randomInt(n) {
     return Math.floor(Math.random() * (n + 1))
 }
+
+function swap(a, i, j) {
+    let temp = a[i]
+    a[i] = a[j]
+    a[j] = temp
+}
+const a = [5, 8, 10, 9]
+swap(a, 1, 3)
+console.log(a)
+
